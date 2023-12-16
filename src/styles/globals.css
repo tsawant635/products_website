@@ -8,6 +8,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --text-color:var(--pink, linear-gradient(90deg, #920AA8 2%, #E019CC 20%, #FF81E3 48%, #FC75D6 52%, #DF55F6 60%, #E822EC 71%, #E80F91 75%, #ED19D8 81.25%, #FE3873 100%));
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -85,17 +86,20 @@ body {
   overflow-x: hidden;
 }
 
+/* fonts.scss */
+
+/* Font Families */
+@import url('https://fonts.googleapis.com/css2?family=Routhem&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bespak&display=swap');
+
+/* Global Styles */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Routhem', sans-serif;
+  background-color: #26072C;
 }
 
-a {
+/* a {
   color: inherit;
   text-decoration: none;
 }
@@ -104,4 +108,17 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} 
+*/
+/* fonts.scss */
+
+/* Import Routhem font */
+@import url('https://fonts.googleapis.com/css2?family=Routhem&display=swap');
+
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Import Bespak font */
+@import url('https://fonts.googleapis.com/css2?family=Bespak&display=swap');
+
+/* Add additional font imports if needed */

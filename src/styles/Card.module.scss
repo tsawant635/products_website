@@ -1,0 +1,110 @@
+.mainContainer {
+  display: flex;
+  width: 325.321px;
+  height: 444.704px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 29.846px;
+  background: #fff;
+  box-shadow: 0px 0px 29.846px 0px rgba(0, 0, 0, 0.1);
+  margin: 0%;
+  padding: 0%;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+
+    p {
+      text-align: justify;
+      font-family: Poppins;
+      font-size: 17.908px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      background: var(
+        --Gold,
+        linear-gradient(
+          90deg,
+          #a8620a 2%,
+          #e09519 20%,
+          #ffe581 48%,
+          #fcdc75 52%,
+          #f6c755 60%,
+          #eca522 71%,
+          #e8980f 75%,
+          #feb838 100%
+        )
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .svgContainer {
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+
+    p {
+      color: #000;
+      text-align: justify;
+      font-family: Poppins;
+      font-size: 26.846px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .btn {
+    button {
+      border-radius: 41.381px;
+      padding: 0.5rem 70px;
+      margin: 1rem 0.5rem;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: #000;
+      font-family: Bespak;
+      font-size: 20.486px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      background: var(
+        --pink,
+        linear-gradient(
+          90deg,
+          #920aa8 2%,
+          #e019cc 20%,
+          #ff81e3 48%,
+          #fc75d6 52%,
+          #df55f6 60%,
+          #e822ec 71%,
+          #e80f91 75%,
+          #ed19d8 81.25%,
+          #fe3873 100%
+        )
+      );
+      cursor: pointer;
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+}

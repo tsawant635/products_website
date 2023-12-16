@@ -1,0 +1,130 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .heroSection {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    background: rgba(0, 0, 0, 0.8)
+      url("https://res.cloudinary.com/dkjn33zdf/image/upload/v1702698613/unsplash_FO7JIlwjOtU_v0eodp.png");
+    background-size: cover;
+    height: 300px;
+    gap: 40px;
+    backdrop-filter: blur(40px);
+    background-size: cover;
+
+    @media screen and (min-width: 768px) {
+      height: 500px;
+    }
+    .productHeader {
+      padding-top: 3rem;
+      width: 300px;
+
+      @media screen and (min-width: 768px) {
+        width: 500px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 36px;
+    color: #fff;
+    margin: 1rem 0rem;
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 340px;
+    // height: 100vh;
+    border-radius: 29.272px;
+    border: 4.018px solid var(--Gold, #a8620a);
+    background: #e4e4e4;
+    box-shadow: 0px 0px 29.272px 0px rgba(0, 0, 0, 0.1);
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      width: 600px;
+      gap: 40px;
+    }
+
+    .imageContainer {
+      @media screen and (min-width: 768px) {
+        margin-left: 2rem;
+      }
+
+      img {
+        width: 200px;
+        height: 300px;
+        margin: 2rem 0rem;
+        border-radius: 4px;
+        border: 3.45px solid var(--Gold, #a8620a);
+        box-shadow: 5.004px 5.004px 25.02px 0px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+      }
+    }
+
+    .contentContainer {
+      display: flex;
+      flex-direction: column;
+      .title {
+        color: #000;
+        text-align: justify;
+        font-family: Inter;
+        font-size: 29.272px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 1rem 0rem;
+      }
+
+      .description {
+        color: #131313;
+        text-align: justify;
+        font-family: Poppins;
+        font-size: 16.073px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 200px;
+        margin: 1rem 0rem;
+      }
+
+      .price,
+      .discount {
+        color: #000;
+        text-align: justify;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .cardImages {
+    display: none;
+
+    @media screen and (min-width: 960px) {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 20px;
+
+      .singleImg {
+        width: 200px;
+        height: 250px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
